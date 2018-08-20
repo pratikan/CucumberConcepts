@@ -1,33 +1,11 @@
-Feature: Free CRM login feature
+Feature: Deal data creation
 
-  Scenario Outline: Free CRM login Test Scenario                                     # LoginTest.feature:3
-    Given user is already on login page
-    When title of the login page is Free CRM
-    Then user enters "<username>" and "<password>"
-    Then user click on Login button
-    Then user is on home page
-    Then user moves to new contact pages
-    Then user enters contact details "<firstname>" and "<lastname>" and "<position>"
-    Then user close the browser
-
-    Examples: 
-
-  Scenario Outline: Free CRM login Test Scenario                # LoginTest.feature:16
-    Given user is already on login page                         # LoginStepDefinition.user_already_on_login_page()
-    When title of the login page is Free CRM                    # LoginStepDefinition.title_of_the_login_page_is_Free_CRM()
-    Then user enters "naveenk" and "test@123"                   # LoginStepDefinition.user_enters_username_and_password(String,String)
-    Then user click on Login button                             # LoginStepDefinition.user_click_on_Login_button()
-    Then user is on home page                                   # LoginStepDefinition.user_is_on_hopme_page()
-    Then user moves to new contact pages                        # LoginStepDefinition.user_moves_to_new_contact_pages()
-    Then user enters contact details "Tom" and "peter" and "QA" # LoginStepDefinition.user_enters_contacts_details(String,String,String)
-    Then user close the browser                                 # LoginStepDefinition.user_close_the_browser()
-
-  Scenario Outline: Free CRM login Test Scenario                      # LoginTest.feature:17
-    Given user is already on login page                               # LoginStepDefinition.user_already_on_login_page()
-    When title of the login page is Free CRM                          # LoginStepDefinition.title_of_the_login_page_is_Free_CRM()
-    Then user enters "naveenk" and "test@123"                         # LoginStepDefinition.user_enters_username_and_password(String,String)
-    Then user click on Login button                                   # LoginStepDefinition.user_click_on_Login_button()
-    Then user is on home page                                         # LoginStepDefinition.user_is_on_hopme_page()
-    Then user moves to new contact pages                              # LoginStepDefinition.user_moves_to_new_contact_pages()
-    Then user enters contact details "Harry" and "cris" and "Manager" # LoginStepDefinition.user_enters_contacts_details(String,String,String)
-    Then user close the browser                                       # LoginStepDefinition.user_close_the_browser()
+  Scenario: Free CRM Create a new deal Scenario # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/DealTestMap.feature:2
+    Given user is already on login page         # DealsTestUsingMapStepDifinition.user_already_on_login_page()
+    When title of the login page is Free CRM    # DealsTestUsingMapStepDifinition.title_of_the_login_page_is_Free_CRM()
+    Then user enters username and password      # DealsTestUsingMapStepDifinition.user_enters_username_and_password(DataTable)
+    Then user click on Login button             # DealsTestUsingMapStepDifinition.user_click_on_login_button()
+    Then user is on home page                   # DealsTestUsingMapStepDifinition.user_is_on_home_page()
+    Then user moves to new deal pages           # DealsTestUsingMapStepDifinition.user_moves_to_new_deals_pages()
+    Then user enters deal details               # DealsTestUsingMapStepDifinition.user_enters_deal_details(DataTable)
+    Then user close the browser                 # DealsTestUsingMapStepDifinition.user_close_the_browser()

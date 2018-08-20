@@ -1,23 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="39.661811">
-<testcase classname="Free CRM login feature" name="Free CRM login Test Scenario" time="21.618012">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.88571">
+<testcase classname="Deal data creation" name="Free CRM Create a new deal Scenario" time="34.88571">
 <system-out><![CDATA[Given user is already on login page.........................................passed
 When title of the login page is Free CRM....................................passed
-Then user enters "naveenk" and "test@123"...................................passed
+Then user enters username and password......................................passed
 Then user click on Login button.............................................passed
 Then user is on home page...................................................passed
-Then user moves to new contact pages........................................passed
-Then user enters contact details "Tom" and "peter" and "QA".................passed
-Then user close the browser.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM login feature" name="Free CRM login Test Scenario 2" time="18.043799">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-When title of the login page is Free CRM....................................passed
-Then user enters "naveenk" and "test@123"...................................passed
-Then user click on Login button.............................................passed
-Then user is on home page...................................................passed
-Then user moves to new contact pages........................................passed
-Then user enters contact details "Harry" and "cris" and "Manager"...........passed
+Then user moves to new deal pages...........................................passed
+Then user enters deal details...............................................passed
 Then user close the browser.................................................passed
 ]]></system-out>
 </testcase>

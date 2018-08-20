@@ -1,4 +1,4 @@
-package stepDifinition;
+/*package stepDifinition;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,9 +25,9 @@ public class LoginStepDefinition {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 
-		/*driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-*/
+
 		driver.get("https://www.freecrm.com/index.html");
 	}
 
@@ -82,3 +82,4 @@ public class LoginStepDefinition {
 	}
 }
 
+*/
