@@ -1,11 +1,10 @@
-Feature: Deal data creation
+@FunctionalTest
+Feature: Free CRM application testing
 
-  Scenario: Free CRM Create a new deal Scenario # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/DealTestMap.feature:2
-    Given user is already on login page         # DealsTestUsingMapStepDifinition.user_already_on_login_page()
-    When title of the login page is Free CRM    # DealsTestUsingMapStepDifinition.title_of_the_login_page_is_Free_CRM()
-    Then user enters username and password      # DealsTestUsingMapStepDifinition.user_enters_username_and_password(DataTable)
-    Then user click on Login button             # DealsTestUsingMapStepDifinition.user_click_on_login_button()
-    Then user is on home page                   # DealsTestUsingMapStepDifinition.user_is_on_home_page()
-    Then user moves to new deal pages           # DealsTestUsingMapStepDifinition.user_moves_to_new_deals_pages()
-    Then user enters deal details               # DealsTestUsingMapStepDifinition.user_enters_deal_details(DataTable)
-    Then user close the browser                 # DealsTestUsingMapStepDifinition.user_close_the_browser()
+  @RegressionTest
+  Scenario: Login with incorrect username and correct password # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/tagging.feature:9
+    Given This is a invalid login test                         # TaggingStepDifinition.this_is_a_invalid_login_test()
+
+  @RegressionTest
+  Scenario: Create a tasks          # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/tagging.feature:21
+    Given This is a tasks test case # TaggingStepDifinition.this_is_a_tasks_test_case()
