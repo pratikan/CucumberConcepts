@@ -1,10 +1,19 @@
-@FunctionalTest
-Feature: Free CRM application testing
+Feature: Test Tagged Hooks
 
-  @RegressionTest
-  Scenario: Login with incorrect username and correct password # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/tagging.feature:9
-    Given This is a invalid login test                         # TaggingStepDifinition.this_is_a_invalid_login_test()
+  @First
+  Scenario: This is First test   # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/taggedHooks.feature:4
+    Given this is the first step # TaggedHookStepDifination.this_is_the_first_step()
+    When this is the second step # TaggedHookStepDifination.this_is_the_second_step()
+    Then this is the third step  # TaggedHookStepDifination.this_is_the_third_step()
 
-  @RegressionTest
-  Scenario: Create a tasks          # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/tagging.feature:21
-    Given This is a tasks test case # TaggingStepDifinition.this_is_a_tasks_test_case()
+  @Second
+  Scenario: This is Second test  # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/taggedHooks.feature:10
+    Given this is the first step # TaggedHookStepDifination.this_is_the_first_step()
+    When this is the second step # TaggedHookStepDifination.this_is_the_second_step()
+    Then this is the third step  # TaggedHookStepDifination.this_is_the_third_step()
+
+  @Third
+  Scenario: This is Third test   # /selenium_dev/CucumberFreeCRMLoginTest/src/test/java/features/taggedHooks.feature:16
+    Given this is the first step # TaggedHookStepDifination.this_is_the_first_step()
+    When this is the second step # TaggedHookStepDifination.this_is_the_second_step()
+    Then this is the third step  # TaggedHookStepDifination.this_is_the_third_step()

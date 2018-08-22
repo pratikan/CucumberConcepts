@@ -1,4 +1,4 @@
-package myRunner;
+/*package myRunner;
 
 import org.junit.runner.RunWith;
 
@@ -19,3 +19,7 @@ import cucumber.api.junit.Cucumber;
 public class TaggingRunnerTest {
 
 }
+//ORed : tags = {"@SmokeTest , @RegressionTest"} -- execute all tests tagged as @SmokeTest OR @RegressionTest
+//ANDed : tags = tags = {"@SmokeTest" , "@RegressionTest"} -- execute all tests tagged as @SmokeTest AND @RegressionTest
+	
+*/
